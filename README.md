@@ -1,10 +1,10 @@
 ## Machine Info
-Name: LG Gram 15Z980
-CPU: i5-8250u
-iGPU: intel 620
-RAM: 16GB 2400Mhz
-Internal Storage: NVME 512GB + NVME 256GB
-External Storage: 512GB HDD in USB 3.0 enclosure
+- Name: LG Gram 15Z980
+- CPU: i5-8250u
+- iGPU: intel 620
+- RAM: 16GB 2400Mhz
+- Internal Storage: NVME 512GB + NVME 256GB
+- External Storage: 512GB HDD in USB 3.0 enclosure
 
 I Installed my hackintosh in External Storage hahhaha. I will not use this OS as my daily driver since I am using Ubuntu x Windows (Dualboot setup). I only did this project for the reason that I want to install cracked products in MacOS.I tied OSX-KVM project for running MAcOS in VM days ago but it has performance issue, it doesnt use iGPU (maybe my skill use). Cracked software exists in MacOS!!!.
 
@@ -28,7 +28,7 @@ Airportltlwm.kext - this is built-in ACPI driver but struggles in getting intern
 - Battery Display
 - Bluetooth
 
-#### I used Hardwaresniffer to view and automate hardware report generation (.json file) for customize ACPI patch but there are still hardware not working properly or totaly not working. 
+#### I used Hardwaresniffer to view and automate hardware report generation (.json file) for customized ACPI patch but there are still hardware that are not working properly or totaly not working. 
 ### Not Working
 - PrtSc key
 - Right 2nd USB slot (beside 3.5 Jack)
