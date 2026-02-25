@@ -6,19 +6,18 @@
 - Internal Storage: NVME 512GB + NVME 256GB
 - External Storage: 512GB HDD in USB 3.0 enclosure
 
-I Installed my hackintosh in External Storage hahhaha. I will not use this OS as my daily driver since I am using Ubuntu x Windows (Dualboot setup). I only did this project for the reason that I want to install cracked products in MacOS.I tied OSX-KVM project for running MAcOS in VM days ago but it has performance issue, it doesnt use iGPU (maybe my skill use). Cracked software exists in MacOS!!!.
+I Installed my hackintosh in External Storage hahhaha. I will not use this OS as my daily driver since I am using Ubuntu x Windows (Dualboot setup). I only did this project for the reason that I want to install cracked products in MacOS. I tied OSX-KVM project for running MAcOS in VM days ago but it has performance issue, it doesnt use iGPU (maybe my skill use). Cracked software exists in MacOS!!!.
 
 ## Project Details
 ### Added Kexts
-Itlwm.kext - fixed slow wireless internet
-ECEnabler.kext - for fixing battery display/ detection (ACPI SSDT files in z980 series doesn't work)
+- Itlwm.kext - fixed slow wireless internet
+- ECEnabler.kext - for fixing battery display/ detection (ACPI SSDT files in z980 series doesn't work)
 
 ### Disabled in kernel tab at OCAT_Mac.dmg
-Airportltlwm.kext - this is built-in ACPI driver but struggles in getting internet speed (Wi-Fi). So I replaced it with Itlwm.kext. They belong to the same project
-
+- Airportltlwm.kext - this is built-in ACPI driver but struggles in getting internet speed (Wi-Fi). So I replaced it with Itlwm.kext. They belong to the same project
 - Itlwm works well compared to Airportltlwm.kext but still struggles, not consistent.
 - If connected to a phone's hotspot with the same router it can spike.
-
+- 
 ### Working
 - iGPU
 - FN Keys (brightness, volume, backlight KB)
@@ -41,7 +40,7 @@ Note: if hackintosh is not booting when you remove the external storage holding 
 
 Note (2): I did this project on Feb 5, 2026 and created this README in Feb 25, 2026, I forgot some of the details, I am now thinking if I write this correctly hahaha. Its important to study more and read different repo, maybe ill modify this readme if I will go back in this project
 
-if someone is reading this, thanks for visiting my repo and please mark a star hahaha
+if someone is reading this, thanks for visiting my repo and please leave a star hahaha
 
 
 
