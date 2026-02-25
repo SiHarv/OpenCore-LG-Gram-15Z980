@@ -1,4 +1,4 @@
-## Machine Info
+### Machine Info
 - Name: LG Gram 15Z980
 - CPU: i5-8250u
 - iGPU: intel 620
