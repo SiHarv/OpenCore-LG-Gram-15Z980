@@ -40,11 +40,11 @@ I Installed my hackintosh in External Storage hahhaha. I will not use this OS as
 
 ### BIOS Settings (Crucial)
 #### You must apply these settings or the system will fail to boot:
-Secure Boot:Disabled
-SATA Mode: AHCI
-Fast Boot: Disabled
-DVMT Pre-allocated: 64MB (or higher)
-CFG Lock: Disabled (Unlock using RU.efi if hidden)
+- Secure Boot:Disabled
+- SATA Mode: AHCI
+- Fast Boot: Disabled
+- DVMT Pre-allocated: 64MB (or higher)
+- CFG Lock: Disabled (Unlock using RU.efi if hidden)
 
 Note: if hackintosh is not booting when you remove the external storage holding EFI, replace your boot .efi file with OpenCore.efi and rename it "BOOTx64.efi" (if you are using Windows boot Manager) same situation if your using GRUB for linux but dont delete your original bootloader, save it as backup. I also uploaded the BOOTLOADER here together with my OC file, you can Copy & Paste it in your EFI partition. 
 
