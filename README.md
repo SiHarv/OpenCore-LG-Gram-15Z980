@@ -52,6 +52,14 @@ Note (2): I did this project on Feb 5, 2026 and created this README in Feb 25, 2
 
 if someone is reading this, thanks for visiting my repo and please leave a star hahaha
 
+### My Partition Map:
+
+| Disk | Partition | Size | Content |
+| :--- | :--- | :--- | :--- |
+| sda | sda1 | 600 MB | Windows EFI  |
+| sda | sda2 | 476.3 GB | Windows 11 (will slice this partition to add MacOS) |
+| sdb | sdb1 | 1 GB | Ubuntu EFI + OpenCore (F022-77B7) |
+| sdb | sdb2 | 237.4 GB | Ubuntu System |
 
 
 
