@@ -61,9 +61,9 @@ I will not use this OS as my daily driver since I am using Ubuntu x Windows (Dua
 
 Note: if hackintosh is not booting when you remove the external storage holding EFI, replace your boot .efi file with OpenCore.efi and rename it "BOOTx64.efi" (if you are using Windows boot Manager) same situation if your using GRUB for linux but dont delete your original bootloader, save it as backup. I also uploaded the BOOTLOADER here together with my OC file, you can Copy & Paste it in your EFI partition. 
 
-Note (2): I did this project on Feb 5, 2026 and created this README in Feb 25, 2026, I forgot some of the details, I am now thinking if I write this correctly hahaha. Its important to study more and read different repo, maybe ill modify this readme if I will go back in this project
+Note (2): I did this project on Feb 5, 2026 and created this README in Feb 25, 2026, I forgot some of the details, I am now thinking if I write this correctly hahaha. Its important to study more and read different repo, maybe ill modify this readme if I will get back in this project
 
-if someone is reading this, thanks for visiting my repo and please leave a star. I will be leaving this project. 
+if someone is reading this, thanks for visiting my repo and please leave a star. I will be leaving this project :(
 
 ### My Partition Map:
 
