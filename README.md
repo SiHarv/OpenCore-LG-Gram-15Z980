@@ -28,13 +28,11 @@ I Installed my hackintosh in External Storage hahhaha. I will not use this OS as
 - Sleep and wake
 - Battery Display
 - Bluetooth
+- ports
 
 #### I used Hardwaresniffer to view and automate hardware report generation (.json file) for customized ACPI patch but there are still hardware that are not working properly or totaly not working. 
 ### Not Working
 - PrtSc key
-- Right 2nd USB slot (beside 3.5 Jack)
-- Type-C cant detect phone storage but can provide power. 
-- SD Card Slot (Detects my SD card after it stays in the slot for an hour)
 - Airdrop (expected)
 - FingerPrint
 
