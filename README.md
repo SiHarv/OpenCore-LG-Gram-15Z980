@@ -8,12 +8,27 @@
 - Internal Storage: NVME 512GB + NVME 256GB
 - External Storage: 512GB HDD in USB 3.0 enclosure
 
-I Installed my hackintosh in External Storage hahhaha. I will not use this OS as my daily driver since I am using Ubuntu x Windows (Dualboot setup). I only did this project for the reason that I want to install cracked products in MacOS. I tried OSX-KVM project for running MAcOS in VM days ago but it has performance issue, it doesn't use iGPU (maybe skill issue). Cracked software exists in MacOS!!!.
+I will not use this OS as my daily driver since I am using Ubuntu x Windows (Dualboot setup). I only did this project for the reason that I want to install cracked products in MacOS. I tried OSX-KVM project for running MAcOS in VM days ago but it has performance issue, it doesn't use iGPU (maybe skill issue). Cracked software exists in MacOS!!!.
 
 ## Project Details
+
+### Tools
+- OpenCore
+- USBToolBox
+- Hackintool
+- OpenCore Auxillary Tools
+- ProperTree
+- gibMacOS
+- hardware-Sniffer
+- OPCore-Simplify
+- SSDTTime
+
 ### Added Kexts
 - Itlwm.kext - fixed slow wireless internet
 - ECEnabler.kext - for fixing battery display/ detection (ACPI SSDT files in z980 series doesn't work)
+- USBInjectAll - temporarily injects all ports in macOS to open all ports
+- UTBMap - tells the system what physicall ports are active
+- ThunderboltReset - resets the power state and registers of your laptop's built-in Intel Thunderbolt controller chip during the boot sequence (still TB not working) :(
 
 ### Disabled in kernel tab at OCAT_Mac.dmg
 - Airportltlwm.kext - this is built-in ACPI driver but struggles in getting internet speed (Wi-Fi). So I replaced it with Itlwm.kext. They belong to the same project
@@ -28,7 +43,7 @@ I Installed my hackintosh in External Storage hahhaha. I will not use this OS as
 - Sleep and wake
 - Battery Display
 - Bluetooth
-- ports
+- ports (Type C not in thunderbolt)
 
 #### I used Hardwaresniffer to view and automate hardware report generation (.json file) for customized ACPI patch but there are still hardware that are not working properly or totaly not working. 
 ### Not Working
@@ -48,7 +63,7 @@ Note: if hackintosh is not booting when you remove the external storage holding 
 
 Note (2): I did this project on Feb 5, 2026 and created this README in Feb 25, 2026, I forgot some of the details, I am now thinking if I write this correctly hahaha. Its important to study more and read different repo, maybe ill modify this readme if I will go back in this project
 
-if someone is reading this, thanks for visiting my repo and please leave a star hahaha
+if someone is reading this, thanks for visiting my repo and please leave a star. I will be leaving this project. 
 
 ### My Partition Map:
 
@@ -58,6 +73,5 @@ if someone is reading this, thanks for visiting my repo and please leave a star 
 | sda | sda2 | 476.3 GB | Windows 11 (will slice this partition to add MacOS) |
 | sdb | sdb1 | 1 GB | Ubuntu EFI + OpenCore (F022-77B7) |
 | sdb | sdb2 | 237.4 GB | Ubuntu System |
-
 
 
