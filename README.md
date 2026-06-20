@@ -1,4 +1,4 @@
-# LG Gram 15Z980 Ventura 13
+# LG Gram 15Z980 Hackintosh
 ### Machine Info
 - Name: LG Gram 15Z980
 - CPU: i5-8250u
