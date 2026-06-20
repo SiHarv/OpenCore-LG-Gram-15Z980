@@ -1,12 +1,14 @@
+# LG Gram 15Z980 Ventura 13
 ### Machine Info
 - Name: LG Gram 15Z980
 - CPU: i5-8250u
-- iGPU: intel 620
+- iGPU: intel UHD 620
+- Audio: Conexant CX8200
 - RAM: 16GB 2400Mhz
 - Internal Storage: NVME 512GB + NVME 256GB
 - External Storage: 512GB HDD in USB 3.0 enclosure
 
-I Installed my hackintosh in External Storage hahhaha. I will not use this OS as my daily driver since I am using Ubuntu x Windows (Dualboot setup). I only did this project for the reason that I want to install cracked products in MacOS. I tied OSX-KVM project for running MAcOS in VM days ago but it has performance issue, it doesnt use iGPU (maybe my skill use). Cracked software exists in MacOS!!!.
+I Installed my hackintosh in External Storage hahhaha. I will not use this OS as my daily driver since I am using Ubuntu x Windows (Dualboot setup). I only did this project for the reason that I want to install cracked products in MacOS. I tried OSX-KVM project for running MAcOS in VM days ago but it has performance issue, it doesn't use iGPU (maybe skill issue). Cracked software exists in MacOS!!!.
 
 ## Project Details
 ### Added Kexts
@@ -36,12 +38,28 @@ I Installed my hackintosh in External Storage hahhaha. I will not use this OS as
 - Airdrop (expected)
 - FingerPrint
 
+### BIOS Settings (Crucial)
+#### You must apply these settings or the system will fail to boot:
+- Secure Boot:Disabled
+- SATA Mode: AHCI
+- Fast Boot: Disabled
+- DVMT Pre-allocated: 64MB (or higher)
+- CFG Lock: Disabled (Unlock using RU.efi if hidden)
+
 Note: if hackintosh is not booting when you remove the external storage holding EFI, replace your boot .efi file with OpenCore.efi and rename it "BOOTx64.efi" (if you are using Windows boot Manager) same situation if your using GRUB for linux but dont delete your original bootloader, save it as backup. I also uploaded the BOOTLOADER here together with my OC file, you can Copy & Paste it in your EFI partition. 
 
 Note (2): I did this project on Feb 5, 2026 and created this README in Feb 25, 2026, I forgot some of the details, I am now thinking if I write this correctly hahaha. Its important to study more and read different repo, maybe ill modify this readme if I will go back in this project
 
 if someone is reading this, thanks for visiting my repo and please leave a star hahaha
 
+### My Partition Map:
+
+| Disk | Partition | Size | Content |
+| :--- | :--- | :--- | :--- |
+| sda | sda1 | 600 MB | Windows EFI  |
+| sda | sda2 | 476.3 GB | Windows 11 (will slice this partition to add MacOS) |
+| sdb | sdb1 | 1 GB | Ubuntu EFI + OpenCore (F022-77B7) |
+| sdb | sdb2 | 237.4 GB | Ubuntu System |
 
 
 
